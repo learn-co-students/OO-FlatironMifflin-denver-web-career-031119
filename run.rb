@@ -8,11 +8,12 @@ require 'pry'
 bob = Manager.new('Bob', 'Nike', 38)
 steve = Manager.new('Steve Jobs', 'Apple', 59)
 
-bob.hire_employee('Bill', 50000)
-bob.hire_employee('Will', 35000)
+bill = bob.hire_employee('Bill', 50000)
+will = bob.hire_employee('Will', 35000)
 
-steve.hire_employee('Phillis', 60000)
-steve.hire_employee('Jordan', 55000)
+kendall = steve.hire_employee('Kendall', 100000)
+phillis = steve.hire_employee('Phillis', 54100)
+jordan = steve.hire_employee('Jordan', 55000)
 
 binding.pry
 puts "done"

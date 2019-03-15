@@ -14,4 +14,8 @@ class Department
     @@all
   end
 
+  def self.find_department_name(dept)
+    @@all.find{ |depart| depart.name == dept}
+  end
+
 end
