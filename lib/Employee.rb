@@ -33,6 +33,6 @@ class Employee
 
   def self.tax_bracket(employee_w_salary)
     @@all.select{ |employee|
-    employee_w_salary.salary - 1000 < employee.salary && employee.salary < employee_w_salary.salary + 1000 && employee_w_salary.name != employee.name}
+    employee_w_salary.salary - 1000 < employee.salary && employee.salary < employee_w_salary.salary + 1000 && employee_w_salary.name != employee.names}
   end
 end
